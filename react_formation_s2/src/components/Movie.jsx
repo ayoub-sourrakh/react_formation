@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import { MoviesContext } from '../context/MoviesContext'
 
-const Movie = ({movie, setMovies, index}) => {
+const Movie = ({movie, index, nbMovies}) => {
+
+    const {setMovies} = useContext(MoviesContext)
 
     const movieDelete = () => {
-        setMovies(oldState => {
+        setMovies((oldState) => {
             const newState = [...oldState]
             newState.splice(index, 1)
             return newState
@@ -11,9 +14,9 @@ const Movie = ({movie, setMovies, index}) => {
     }
 
     const movieMove = (direction) => {
-        setMovies((oldState) => {
+        setMovies(oldState => {
             const newState = [...oldState]
-            let otherMoviesIndex = direction ? index -1 : index + 1
+            let otherMoviesIndex = direction ? index - 1 : index + 1
             newState[otherMoviesIndex]= movie
             newState[index] = oldState[otherMoviesIndex]
             return newState

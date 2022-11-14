@@ -1,6 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { MoviesContext } from '../context/MoviesContext'
 
 const FormMovies = () => {
+
+  const {setMovies} = useContext(MoviesContext)
+
   const [inputName, setInputName] = useState('')
   const [inputYear, setInputYear] = useState('')
 

@@ -1,18 +1,33 @@
 import React, {useState} from 'react'
 import ListMovies from '../components/ListMovies'
 import FormMovies from '../components/FormMovies'
+import { MoviesContext } from '../context/MoviesContext'
 
 const Movies = () => {
   const [movies, setMovies] = useState([])
 
   return (
-    <div>
-      <h1>Movies</h1>
+    <MoviesContext.Provider
+    // share infos 
+      value={{
+        setMovies,  // == setMovies  : setMovies
+      }}
+    >
       <div>
-        <FormMovies setMovies={setMovies} />
-        <ListMovies setMovies={setMovies} movies={movies} />
+        <h1>Movies</h1>
+        <div>
+
+          <FormMovies 
+            setMovies={setMovies} 
+          />
+
+          <ListMovies
+            movies={movies} 
+          />
+
+        </div>
       </div>
-    </div>
+    </MoviesContext.Provider>
   )
 }
 
