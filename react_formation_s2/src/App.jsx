@@ -1,6 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Layout/Navbar"
+import Home from "./pages/Home"
 import Movies from "./pages/Movies"
 
 const App = () => {
