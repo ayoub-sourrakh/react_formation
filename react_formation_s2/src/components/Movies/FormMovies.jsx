@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import { MoviesContext } from '../context/MoviesContext'
+import { MoviesContext } from '../../context/MoviesContext'
 
 const FormMovies = () => {
 

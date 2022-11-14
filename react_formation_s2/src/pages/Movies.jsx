@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import ListMovies from '../components/ListMovies'
-import FormMovies from '../components/FormMovies'
+import ListMovies from '../components/Movies/ListMovies'
+import FormMovies from '../components/Movies/FormMovies'
 import { MoviesContext } from '../context/MoviesContext'
 
 const Movies = () => {
