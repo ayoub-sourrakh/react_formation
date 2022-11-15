@@ -29,28 +29,21 @@
 const arr1 = [1,5,10,15,10]
 const arr2 = [10,44,15,20]
 
-const countEl = (el ,array1) => {
-        let count = 0;
-    
-        array1.forEach(el1 => {
-            if(el1 === el) {
-                count++;
-            }
-        })
+// elInArr <=> includes
 
-        return count;
-}
+const elInArr = (el, arr) => {
+    let ind = 0;
+    arr.forEach(element => {
+        if( element === el) ind = 1;
+    })
+    return ind;
+} 
 
 const tabF = [...arr1, ...arr2];
 const tabF2 = [];
 
-console.log(tabF)
-
 tabF.forEach(el => {
-    if( (countEl(el, tabF)) > 1) {
-        tabF2.push(el);
-        tabF.splice(tabF.indexOf(el));
-    } else {
+    if ( elInArr(el, tabF2) === 0 ) {
         tabF2.push(el);
     }
 })
