@@ -13,7 +13,7 @@ const Home = () => {
         setTasks,
     }}>
     
-    <div>
+    <div className='home'>
         <h1>Tasks</h1>
         <div>
             <TaskForm

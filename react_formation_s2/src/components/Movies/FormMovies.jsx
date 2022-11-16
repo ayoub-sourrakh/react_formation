@@ -25,7 +25,11 @@ const FormMovies = () => {
       <h2>Add a movie</h2>
         <form onSubmit={handleSubmit}>
             <input onChange={(e) => setInputName(e.target.value)} placeholder='Name' type="text" name='Name' value={inputName} />
+            <br />
+            <br />
             <input onChange={(e) => setInputYear(e.target.value)} placeholder='Year' type="text" name='Year' value={inputYear} />
+            <br />
+            <br />
             <button type='submit'>Add movie</button>
         </form>
     </div>

@@ -25,6 +25,8 @@ const TaskForm = () => {
             <h2>Add a task</h2>
             <form onSubmit={handleSubmit}>
                 <input onChange={(e) => setInputTask(e.target.value)} placeholder='Task' name='Task' value={inputTask} type="text" />
+                <br />
+                <br />
                 <button type='submit'>Add task</button>
             </form>
         </div>

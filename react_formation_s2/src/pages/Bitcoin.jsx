@@ -1,5 +1,6 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import '../assets/styles/pages/Bitcoin.css'
 
 const Bitcoin = () => {
 
@@ -31,8 +32,8 @@ const Bitcoin = () => {
     }
 
   return (
-    <div>
-        <h1>Bitcoin</h1>
+    <div className='bitcoin'>
+        <h1>Bitcoin converter</h1>
 
         <form onSubmit={request}>
             <input type="number" onChange={(e) => setBitcoin(e.target.value)} value={bitcoin} name="bitcoins" /> ₿ <br /> <br />

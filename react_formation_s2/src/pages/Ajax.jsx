@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import '../assets/styles/pages/Ajax.css'
 
 const Ajax = () => {
     const [urlImg, setUrlImg] = useState()
@@ -24,9 +25,9 @@ const Ajax = () => {
     }
 
   return (
-    <div>
+    <div className='ajax'>
         <h1>Ajax</h1>
-        <button onClick={request}>Woof</button><br />
+        <button onClick={request}>Woof</button><br /> <br />
         {
             urlImg && 
                 <img src={urlImg} style={{maxWidth:'300px', maxHeight:'300px'}} alt="" ></img>

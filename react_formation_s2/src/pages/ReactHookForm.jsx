@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import '../assets/styles/pages/ReactHookForm.css'
 
 const ReactHookForm = () => {
     const {handleSubmit, register, formState: {errors}} = useForm()
@@ -11,7 +12,7 @@ const ReactHookForm = () => {
         console.log(data.km)
     }
   return (
-    <div>
+    <div className='reactHookForm'>
         <h1>React Hook Form</h1>
 
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -20,6 +21,7 @@ const ReactHookForm = () => {
                 type="text" 
                 {...register('name', {required: true, minLength: 3})} 
             /> 
+            <br />
             <br />
 
             {errors.name && <p style={{color:"red", fontSize:"20px"}}>
@@ -34,6 +36,7 @@ const ReactHookForm = () => {
             {
                 errors.km?.type === "max" && <p style={{color: "red", fontSize: "20px"}}>2000000 max</p>
             }
+            <br />
             <br />
             <button type='submit'>Ajouter</button>
         </form>
