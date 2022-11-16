@@ -8,7 +8,8 @@ const Navbar = () => {
       <Link to="/">Home</Link>
       <Link to="/movies">Movies</Link>
       <Link to="/reacthookform">React Hook Form</Link>
-      <Link to="/ajax" >Ajax</Link>
+      <Link to="/ajax">Ajax</Link>
+      <Link to="/bitcoin">Bitcoin</Link>
     </div>
   )
 }
