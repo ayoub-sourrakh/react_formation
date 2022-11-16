@@ -4,6 +4,7 @@ import Navbar from "./components/Layout/Navbar"
 import Ajax from "./pages/Ajax"
 import Bitcoin from "./pages/Bitcoin"
 import Home from "./pages/Home"
+import Meteo from "./pages/Meteo"
 import Movies from "./pages/Movies"
 import ReactHookForm from "./pages/ReactHookForm"
 
@@ -18,6 +19,7 @@ const App = () => {
        <Route path="/reacthookform" element={<ReactHookForm />}></Route>
        <Route path="/ajax" element={<Ajax />} ></Route>
        <Route path="/bitcoin" element={<Bitcoin />} ></Route>
+       <Route path="/meteo" element={<Meteo />}></Route>
       </Routes>
     </BrowserRouter>
   </>

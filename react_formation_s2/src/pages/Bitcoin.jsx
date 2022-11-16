@@ -36,15 +36,19 @@ const Bitcoin = () => {
         <h1>Bitcoin converter</h1>
 
         <form onSubmit={request}>
-            <input type="number" onChange={(e) => setBitcoin(e.target.value)} value={bitcoin} name="bitcoins" /> ₿ <br /> <br />
-            <button type='submit'>Convert</button> <br /> <br />
-            {euros} € 
+            <input type="number" onChange={(e) => setBitcoin(e.target.value)} value={bitcoin} name="bitcoins" placeholder='Bitcoins' /> ₿ 
+            &nbsp;
+            <button type='submit'>Convert</button>
             <br />
             <br />
-            {dollars} $
+            <x>{euros}</x>
+            <c>€</c>
             <br />
+            <x>{dollars}</x>
+            <c>$</c>
             <br />
-            {pounds} £
+            <x>{pounds}</x>
+            <c>£</c>
         </form>
     </div>
   )

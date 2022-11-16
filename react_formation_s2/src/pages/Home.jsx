@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import TaskForm from '../components/Tasks/TaskForm'
 import TaskList from '../components/Tasks/TaskList'
 import { TasksContext } from '../context/TasksContext'
+import '../assets/styles/pages/Home.css'
 
 const Home = () => {
 

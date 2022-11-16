@@ -10,6 +10,7 @@ const Navbar = () => {
       <Link to="/reacthookform">React Hook Form</Link>
       <Link to="/ajax">Ajax</Link>
       <Link to="/bitcoin">Bitcoin</Link>
+      <Link to="/meteo">Météo</Link>
     </div>
   )
 }
