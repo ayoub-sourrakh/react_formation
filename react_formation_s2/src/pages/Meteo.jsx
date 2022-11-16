@@ -29,6 +29,11 @@ const Meteo = () => {
 
     }
 
+    const defaultParams = () => {
+        setInputVille('')
+        setTempVille()
+    }
+
     const request = e => {
 
         e.preventDefault()
@@ -42,7 +47,7 @@ const Meteo = () => {
         <h1>Météo</h1>
 
         <form onSubmit={request}>
-            <input type="text" onChange={(e) => setInputVille(e.target.value)} value={inputVille} name='ville' placeholder='Ville' />
+            <input type="text" onClick={defaultParams} onChange={(e) => setInputVille(e.target.value)} value={inputVille} name='ville' placeholder='Ville' />
             <button onMouseEnter={getLatLonVille} type='submit'>Go</button>
         </form>
         <h3>La température à <x>{inputVille}</x> est de <x>{tempVille}</x> C°.</h3>
