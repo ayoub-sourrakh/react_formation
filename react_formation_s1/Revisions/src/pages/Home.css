@@ -1,0 +1,12 @@
+.homePage{
+
+}
+
+.homePage > p > .count {
+    color: rgb(89, 40, 161);
+    font-weight: 900;
+}
+
+.homePage > p > .countFalse {
+    color: white;
+}

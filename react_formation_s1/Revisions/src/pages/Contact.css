@@ -1,0 +1,12 @@
+.contactPage{
+
+}
+
+.contactPage > p > .count {
+    color: rgb(89, 40, 161);
+    font-weight: 900;
+}
+
+.contactPage > p > .countFalse {
+    color: white;
+}
