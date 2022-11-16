@@ -34,7 +34,7 @@ const arr2 = [10,44,15,20]
 const elInArr = (el, arr) => {
     let ind = 0;
     arr.forEach(element => {
-        if( element === el) ind = 1;
+        if(element === el) ind = 1;
     })
     return ind;
 } 
@@ -43,7 +43,7 @@ const tabF = [...arr1, ...arr2];
 const tabF2 = [];
 
 tabF.forEach(el => {
-    if ( elInArr(el, tabF2) === 0 ) {
+    if (elInArr(el, tabF2) === 0) { // !tabF2.includes(el)
         tabF2.push(el);
     }
 })
