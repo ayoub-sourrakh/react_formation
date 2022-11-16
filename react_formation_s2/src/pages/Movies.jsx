@@ -1,25 +1,18 @@
 import React, {useState} from 'react'
 import ListMovies from '../components/Movies/ListMovies'
 import FormMovies from '../components/Movies/FormMovies'
-import { MoviesContext } from '../context/MoviesContext'
+import { MoviesProvider } from '../context/MoviesContext'
 
 const Movies = () => {
   const [movies, setMovies] = useState([])
 
   return (
-    <MoviesContext.Provider
-    // share infos 
-      value={{
-        setMovies,  // == setMovies  : setMovies
-      }}
-    >
+    <MoviesProvider initialValue={{setMovies}}>
       <div>
         <h1>Movies</h1>
         <div>
 
-          <FormMovies 
-            setMovies={setMovies} 
-          />
+          <FormMovies />
 
           <ListMovies
             movies={movies} 
@@ -27,7 +20,7 @@ const Movies = () => {
 
         </div>
       </div>
-    </MoviesContext.Provider>
+    </MoviesProvider>
   )
 }
 

@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import { MoviesContext } from '../../context/MoviesContext'
+import React from 'react'
+import { useMovies } from '../../context/MoviesContext'
 
 const Movie = ({movie, index, nbMovies}) => {
 
-    const {setMovies} = useContext(MoviesContext)
+    const {setMovies, darkMode} = useMovies()
 
     const movieDelete = () => {
         setMovies((oldState) => {
@@ -27,7 +27,7 @@ const Movie = ({movie, index, nbMovies}) => {
     <div>
         <h3>{movie.name} - {movie.year}</h3>
         <div>
-            <button onClick={movieDelete}>Delete movie</button>
+            <button style={{background: darkMode && 'black'}} onClick={movieDelete}>Delete movie</button>
             <br />
             {
                 index !== 0 && 
