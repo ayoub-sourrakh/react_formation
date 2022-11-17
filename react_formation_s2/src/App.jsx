@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Layout/Navbar"
 import Ajax from "./pages/Ajax"
 import Bitcoin from "./pages/Bitcoin"
+import Blog from "./pages/Blog"
 import Home from "./pages/Home"
 import Meteo from "./pages/Meteo"
 import Movies from "./pages/Movies"
@@ -20,6 +21,7 @@ const App = () => {
        <Route path="/ajax" element={<Ajax />} ></Route>
        <Route path="/bitcoin" element={<Bitcoin />} ></Route>
        <Route path="/meteo" element={<Meteo />}></Route>
+       <Route path="/blog" element={<Blog />} ></Route>
       </Routes>
     </BrowserRouter>
   </>

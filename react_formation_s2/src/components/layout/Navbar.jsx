@@ -11,6 +11,7 @@ const Navbar = () => {
       <Link to="/ajax">Ajax</Link>
       <Link to="/bitcoin">Bitcoin</Link>
       <Link to="/meteo">Météo</Link>
+      <Link to="/blog" > Blog</Link>
     </div>
   )
 }

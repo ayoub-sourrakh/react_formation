@@ -50,7 +50,11 @@ const Meteo = () => {
             <input type="text" onClick={defaultParams} onChange={(e) => setInputVille(e.target.value)} value={inputVille} name='ville' placeholder='Ville' />
             <button onMouseEnter={getLatLonVille} type='submit'>Go</button>
         </form>
-        <h3>La température à <x>{inputVille}</x> est de <x>{tempVille}</x> C°.</h3>
+        {
+            tempVille &&
+            <h3>La température à <x>{inputVille}</x> est de <x>{tempVille}</x> C°.</h3>
+        }
+        
 
     </div>
   )

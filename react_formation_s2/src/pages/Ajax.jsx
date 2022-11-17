@@ -6,10 +6,6 @@ import '../assets/styles/pages/Ajax.css'
 const Ajax = () => {
     const [urlImg, setUrlImg] = useState()
 
-    useEffect(() => {
-        request()
-    }, [])
-
     const request = () => {
         fetch(
                 'https://random.dog/woof.json',

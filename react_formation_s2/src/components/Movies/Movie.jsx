@@ -27,7 +27,7 @@ const Movie = ({movie, index, nbMovies}) => {
     <div>
         <h3>{movie.name} - {movie.year}</h3>
         <div>
-            <button style={{background: darkMode && 'black'}} onClick={movieDelete}>Delete movie</button>
+            <button style={{background: darkMode && 'red'}} onClick={movieDelete}>Delete movie</button>
             <br />
             {
                 index !== 0 && 
