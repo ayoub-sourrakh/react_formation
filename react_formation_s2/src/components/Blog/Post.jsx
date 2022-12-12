@@ -4,6 +4,7 @@ import { useBlog } from '../../context/PostContext'
 const Post = ({post, index}) => {
 
     const {setBlog, date} = useBlog()
+    
 
     const postDelete = () => {
         setBlog((oldState) => {
@@ -12,13 +13,6 @@ const Post = ({post, index}) => {
             return newState
         })
     }
-
-    // const postEdit = () => {
-    //     setBlog((oldState) => {
-    //         const newState = [...oldState]
-    //         newState.splice(index, 1)
-    //     })
-    // }
 
   return (
     <div>

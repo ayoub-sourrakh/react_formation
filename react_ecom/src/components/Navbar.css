@@ -1,0 +1,32 @@
+.navbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(174, 183, 247);
+}
+
+.navbar *:hover {
+    color: rgb(135, 194, 219);;
+}
+
+.navbar *:visited {
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(7, 0, 103);
+}
+
+.categories {
+}
+
+.category {
+    text-decoration: none;
+    color: rgb(4, 4, 117);
+}
+
+.menu {
+}
+
+.menu a {
+    color: rgb(7, 0, 103);
+}

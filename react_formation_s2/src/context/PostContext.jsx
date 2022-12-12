@@ -5,11 +5,16 @@ export const PostContext = React.createContext()
 
 export const PostProvider = ({children, initialValue}) => {
 
-    const [date, setDate] = useState(Date)
-
+    const [posts, setPosts] = useState([])
 
     return (
-        <PostContext.Provider value={{...initialValue, date, setDate}}>
+        <PostContext.Provider 
+            value={{
+                ...initialValue,
+                    posts,
+                    setPosts,
+                }}
+        >
             {children}
         </PostContext.Provider>
     )
