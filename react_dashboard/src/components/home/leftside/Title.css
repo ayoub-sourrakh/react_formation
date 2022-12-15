@@ -1,0 +1,19 @@
+.title_db {
+    display: flex;
+    flex-direction: column;
+    margin-left: 59px;
+    gap: 2px;
+}
+
+.dashboard {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 32px;
+}
+
+.welcback {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6F6F6F;
+}

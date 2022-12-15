@@ -1,0 +1,42 @@
+.progression_bar {
+    display: flex;
+    flex-direction: row;
+    width: 159px;
+    height: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    width: 69px;
+    height: 4px;
+    border-radius: 44px;
+}
+
+.bar_completed {
+    height: 4px;
+    background-color: #51CBFF;
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px;
+}
+
+.bar_uncompleted {
+    height: 4px;
+    background-color: #C4C4C4;
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
+    opacity: .4;
+}
+
+.pourcentage_complet {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1C1F37;
+    opacity: .5;
+}
+
+

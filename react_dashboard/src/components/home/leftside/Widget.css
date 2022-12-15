@@ -1,0 +1,43 @@
+.widget {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    width: 384px;
+    height: 350px;
+    margin-left: 59px;
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+}
+
+.line {
+    width: 384px;
+    height: 2px;
+    background-color: #DADADA;
+    opacity: .5;
+}
+
+.widget_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 20px;
+    height: 61px;
+    margin-left: 20px;
+    margin-right: 14px;
+}
+
+.see_details {
+    display: flex;
+    font-size: 14px;
+    color: #017EFA;
+    gap: 13px;
+    cursor: pointer;
+}
+
+.see_details > svg {
+    margin-top: 4px;
+    cursor: pointer;
+}

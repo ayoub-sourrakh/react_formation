@@ -1,0 +1,61 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.task_infos {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 46px;
+    border: 1px solid #DADADA;
+    border-radius: 4px;
+}
+
+.month {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    opacity: .5;
+}
+
+.day {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1C1F37;
+}
+
+.task_name_cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.task_name {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.task_cat {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: .5;
+}

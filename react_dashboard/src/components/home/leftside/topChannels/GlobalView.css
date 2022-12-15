@@ -1,0 +1,50 @@
+.global_view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 88px;
+}
+
+.nb_views {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    color: #1C1F37;
+}
+
+.bar_view {
+    display: flex;
+    flex-direction: row;
+    width: 337px;
+    height: 10px;
+    gap: 2px;
+}
+
+.fb_bar {
+    background-color: #017EFA;
+    width: 12%;
+    height: 10px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+.inst_bar {
+    background-color: #FD1F9B;
+    width: 43%;
+    height: 10px;
+}
+
+.linked_bar {
+    background-color: #007AB5;
+    width: 20%;
+    height: 10px;
+}
+
+.ytb_bar {
+    background-color: #FF0000;
+    width: 12%;
+    height: 10px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}

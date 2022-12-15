@@ -1,0 +1,10 @@
+.home {
+    position: absolute;
+    left: 280px;
+    top: 90px;
+    z-index: 999;
+    width: 1640px;
+    height: 871px;
+    display: flex;
+    justify-content: space-around;
+}

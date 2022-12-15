@@ -1,0 +1,28 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 334px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.line_content {
+    opacity: 0.5;
+    border: 1px solid #DADADA;
+    width: 342px;
+}
+
+.schedule_content {
+    height: 100%;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top_channels {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
